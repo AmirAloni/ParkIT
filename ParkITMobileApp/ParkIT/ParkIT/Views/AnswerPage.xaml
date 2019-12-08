@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParkIT.Views.AnswerPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="0,20,0,0">
+            <StackLayout VerticalOptions="StartAndExpand" Padding="0,0,0,0">
+                <Label BackgroundColor="Transparent" FontSize="35" x:Name="lableMessage" HorizontalOptions="Center"></Label>
+                <Label TextColor="Black" BackgroundColor="Transparent" FontSize="Medium" x:Name="lablePay"  HorizontalOptions="Center"></Label>
+                <Label TextColor="Black" BackgroundColor="Transparent" FontSize="Medium" x:Name="lableExplanation" HorizontalOptions="Center"></Label>
+                <!-- <Label TextColor="Black" BackgroundColor="Transparent" FontSize="Medium" x:Name="lableImportantNote" HorizontalOptions="Center"></Label> -->
+            </StackLayout>
+            <StackLayout VerticalOptions="StartAndExpand"  Padding="0,0,0,20">
+                <Image x:Name="imageSign" BackgroundColor="Transparent" Aspect="Fill" HeightRequest="300" WidthRequest="230" HorizontalOptions="Center"></Image>
+            </StackLayout>
+            <StackLayout VerticalOptions="End" Orientation="Vertical">
+                <Button TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Medium" x:Name="buttonSaveMyParking" Text="שמירת מקום חניה" Clicked="ButtonSaveMyParking_Clicked"></Button>
+                <Button TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Medium" x:Name="buttonReportSign" Text="דיווח על בעיה" Clicked="ButtonReportSign_Clicked" ></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

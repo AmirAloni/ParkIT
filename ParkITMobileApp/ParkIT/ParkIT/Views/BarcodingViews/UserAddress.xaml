@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParkIT.Views.BarcodingViews.UserAddress">
+    <ContentPage.Content>
+        <StackLayout Padding="20,20">
+            <StackLayout VerticalOptions="CenterAndExpand" Spacing="10">
+            <StackLayout HorizontalOptions="Center" Padding="0,0,0,10">
+                <Label TextColor="#3a66a0" BackgroundColor="Transparent" HorizontalOptions="Center" FontSize="Large" Text="הכנס פרטים"></Label>
+                <Label TextColor="#3a66a0" BackgroundColor="Transparent" HorizontalOptions="Center" FontSize="Medium" Text="מדבקת הברקוד תגיע אליך בדואר"></Label>
+            </StackLayout>
+            <StackLayout>
+                    <Label TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Medium" Text="שם מלא"></Label>
+                    <Entry TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Medium" x:Name="fullNameEntry"></Entry>
+                </StackLayout>
+                <StackLayout>
+                    <Label TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Medium" Text="כתובת"></Label>
+                    <Entry TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Medium" x:Name="fullAddressEntry"></Entry>
+                </StackLayout>
+                <StackLayout>
+                    <Label TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Medium" Text="מיקוד"></Label>
+                    <Entry TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Medium" x:Name="postEntry"></Entry>
+                </StackLayout>
+                <StackLayout>
+                    <Label TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Medium" Text="מייל"></Label>
+                    <Entry TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Medium" x:Name="emailEntry"></Entry>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Spacing="10" VerticalOptions="EndAndExpand">
+              <Button x:Name="mailButton" TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Large" Text="קבל מדבקה בדואר" Clicked="MailButton_Clicked"></Button>
+              <Button x:Name="emailButton" TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Large" Text="קבל במייל" Clicked="EmailButton_Clicked"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

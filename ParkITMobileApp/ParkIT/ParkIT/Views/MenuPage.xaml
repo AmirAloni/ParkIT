@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParkIT.Views.MenuPage"
+             Title="MenuPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" >
+            <StackLayout BackgroundColor="#669ACE" Padding="20,30,0,60">
+                <Label Text="ParkIT" TextColor ="White" FontSize="30" VerticalOptions="Start"></Label>
+            </StackLayout>
+            <StackLayout Padding="0,10,20,0" HorizontalOptions="End">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="End" Padding="2">
+                    <Button x:Name="buttonWhereIsMyCarPage" Text="איפה האוטו?" TextColor="#3a66a0" BackgroundColor="Transparent"
+                        Command="{Binding GoWhereIsMyCarCommand}" FontSize="Medium" HorizontalOptions="End"/>
+                    <Image x:Name="whereIsMyCarImage" HeightRequest="30" WidthRequest="30" BackgroundColor="Transparent" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                    <Button x:Name="buttonCreateSignPage" Text="יצירת תמרור חדש" TextColor="#3a66a0" BackgroundColor="Transparent"
+                    Command="{Binding GoCreateSignCommand}"  FontSize="Medium" HorizontalOptions="End"/>
+                    <Image x:Name="createSignImage" HeightRequest="30" WidthRequest="30" BackgroundColor="Transparent" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="End" Padding="5">
+                    <Button x:Name="buttonUpdateUserDetails" Text="עדכון פרטים" TextColor="#3a66a0" BackgroundColor="Transparent"
+                    Command="{Binding GoUpdateUserDetails}"  FontSize="Medium" HorizontalOptions="End"/>
+                    <Image x:Name="updateUserDetailsImage" HeightRequest="30" WidthRequest="25" BackgroundColor="Transparent"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

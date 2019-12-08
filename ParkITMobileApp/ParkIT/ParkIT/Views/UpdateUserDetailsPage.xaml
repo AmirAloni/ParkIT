@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParkIT.Views.UpdateUserDetailsPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="20,20,20,20">
+            <StackLayout Spacing="20" VerticalOptions="CenterAndExpand" Orientation="Vertical" HorizontalOptions="End">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                    <Picker x:Name="permitPicker" HorizontalOptions="Center" WidthRequest="100"></Picker>
+                    <Label TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Medium" Text="תו חניה"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                    <Picker x:Name="disabledPicker" Title="" HorizontalOptions="Center" WidthRequest="100"></Picker>
+                    <Label TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Medium" Text="תו נכה"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                    <Entry x:Name="carNumEntry" HorizontalOptions="Center" WidthRequest="200"></Entry>
+                    <Label TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Medium" Text="מספר רכב"></Label>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout VerticalOptions="EndAndExpand">
+                <Button TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Large" Text="שמור" x:Name="buttonUpdateDetails" Clicked="ButtonUpdateDetails_Clicked"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

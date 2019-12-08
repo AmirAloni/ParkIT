@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParkIT.Views.BarcodingViews.PaymentPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20,50" Spacing="20">
+            <StackLayout  x:Name="firstStackLayout" ></StackLayout>
+            <Label TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Medium" Text="בחר ימים ושעות"></Label>
+            <Label TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Small" Text="ניתן להוסיף פרטים בהמשך"></Label>
+            <StackLayout Orientation="Horizontal" VerticalOptions="Start" HorizontalOptions="Center">
+                <Button x:Name="g_Button" Text="ש" Clicked="G_Button_Clicked" BackgroundColor="Transparent" TextColor="Black" WidthRequest="40"/>
+                <Button x:Name="f_Button" Text="ו" Clicked="F_Button_Clicked" BackgroundColor="Transparent" TextColor="Black" WidthRequest="40"/>
+                <Button x:Name="e_Button" Text="ה" Clicked="E_Button_Clicked" BackgroundColor="Transparent" TextColor="Black" WidthRequest="40"/>
+                <Button x:Name="d_Button" Text="ד" Clicked="D_Button_Clicked" BackgroundColor="Transparent" TextColor="Black" WidthRequest="40"/>
+                <Button x:Name="c_Button" Text="ג" Clicked="C_Button_Clicked" BackgroundColor="Transparent" TextColor="Black" WidthRequest="40"/>
+                <Button x:Name="b_Button" Text="ב" Clicked="B_Button_Clicked" BackgroundColor="Transparent" TextColor="Black" WidthRequest="40"/>
+                <Button x:Name="a_Button" Text="א" Clicked="A_Button_Clicked" BackgroundColor="Transparent" TextColor="Black" WidthRequest="40"/>
+            </StackLayout>
+            <StackLayout>
+                <Label TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Medium" Text="שעת התחלה"></Label>
+                <TimePicker x:Name="startTimePicker" HorizontalOptions="EndAndExpand"
+                    Time="11:00:00"
+                    Format="HH:mm"/>
+            </StackLayout>
+            <StackLayout>
+                <Label TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Medium" Text="שעת סיום"></Label>
+                <TimePicker x:Name="endTimePicker" HorizontalOptions="End"
+                    Time="11:00:00"
+                    Format="HH:mm"/>
+            </StackLayout>
+            <Button x:Name="setPermitButton" TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Medium" Text="הוספה" Clicked="SetPermitButton_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParkIT.Views.CreateSignPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="0,10,0,10" BackgroundColor="White">
+            <StackLayout  HorizontalOptions="Center">
+                <Label TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Medium" Text="הכנס את פרטי התמרור"></Label>
+                <Label TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Small" Text="הגבלת שעות" HorizontalOptions="Center"></Label>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Spacing="40">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                    <StackLayout Padding="0,10" Orientation="Vertical" HorizontalOptions="Center">
+                        <ImageButton x:Name="parkingPermitButton" BackgroundColor="Transparent" WidthRequest="60" HeightRequest="60" Clicked="ParkingPermitButton_Clicked"></ImageButton>
+                        <Label TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Small" Text="תו חניה" HorizontalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Padding="0,10" Orientation="Vertical" HorizontalOptions="Center">
+                        <ImageButton x:Name="paymentButton" BackgroundColor="Transparent" WidthRequest="60" HeightRequest="60" Clicked="PaymentButton_Clicked"></ImageButton>
+                        <Label TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Small" Text="חניה בתשלום" HorizontalOptions="Center" />
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                    <StackLayout Padding="0,10" Orientation="Vertical" HorizontalOptions="Center">
+                        <ImageButton x:Name="prohibitedButton" BackgroundColor="Transparent" WidthRequest="60" HeightRequest="60" Clicked="ProhibitedButton_Clicked"></ImageButton>
+                        <Label TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Small" Text="חניה אסורה" HorizontalOptions="Center" />
+                      </StackLayout>
+                    <StackLayout Padding="0,10" Orientation="Vertical" HorizontalOptions="Center">
+                        <ImageButton x:Name="DisabledButton" BackgroundColor="Transparent" WidthRequest="60" HeightRequest="60" Clicked="DisabledButton_Clicked"></ImageButton>
+                        <Label TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Small" Text="חנית נכים" HorizontalOptions="Center" />
+                    </StackLayout>
+            </StackLayout>
+        </StackLayout>
+            <StackLayout>
+            <Label TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Small" Text="ללא הגבלות זמן" HorizontalOptions="Center" />
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Spacing="40">
+                <ImageButton x:Name="AllTimeDisabledButton" BackgroundColor="Transparent" WidthRequest="60" HeightRequest="60" Clicked="AllTimeDisabledButton_Clicked"></ImageButton>
+                <ImageButton x:Name="AllTimeProhibitedButton" BackgroundColor="Transparent" WidthRequest="60" HeightRequest="60" Clicked="AllTimeProhibitedButton_Clicked"></ImageButton>
+            </StackLayout>
+            </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Small" Text="פרטים שהוכנסו" HorizontalOptions="Center" />
+                <StackLayout x:Name="permitStackLayout" HorizontalOptions="CenterAndExpand" Orientation="Horizontal"></StackLayout>
+            <StackLayout x:Name="paymentStackLayout" HorizontalOptions="CenterAndExpand" Orientation="Horizontal"></StackLayout>
+            <StackLayout x:Name="prohibitedStackLayout" HorizontalOptions="CenterAndExpand" Orientation="Horizontal"></StackLayout>
+        </StackLayout>
+        <StackLayout VerticalOptions="EndAndExpand">
+            <Button TextColor="#3a66a0" BackgroundColor="Transparent" FontSize="Large" Text="המשך" x:Name="buttonCreateNewSign" Clicked="ButtonCreateNewSign_Clicked"></Button>
+        </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
